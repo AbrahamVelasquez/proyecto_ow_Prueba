@@ -1,0 +1,61 @@
+:root {
+  --btn-bg: #6366f1; /* Un violeta moderno */
+  --btn-hover: #4f46e5;
+  --btn-text: #ffffff;
+  --shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.button {
+  /* Estructura y Espaciado */
+  display: inline-block;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px; /* Bordes redondeados modernos */
+  
+  /* Tipografía */
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--btn-text);
+  text-align: center;
+  text-decoration: none;
+  
+  /* Estilo Visual */
+  background-color: var(--btn-bg);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  
+  /* La clave: Transición suave para todo */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estado: Al pasar el ratón (Hover) */
+.button:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-3px); /* Se eleva un poco */
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.6);
+}
+
+/* Estado: Al hacer clic (Active) */
+.button:active {
+  transform: translateY(-1px); /* Baja un poco al presionar */
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.4);
+}
+
+/* Estado: Foco (Accesibilidad para teclado) */
+.button:focus {
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.3);
+}
+
+.countdown-timer {
+  margin-top: 15px;
+  font-size: 3rem; /* Número grande */
+  font-weight: 800;
+  color: var(--primary-violet);
+  /* Un efecto de desvanecimiento suave */
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}

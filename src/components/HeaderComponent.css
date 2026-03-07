@@ -1,0 +1,56 @@
+:root {
+  --bg-color: #a9c1ff;       /* Un blanco azulado muy limpio */
+  --primary-violet: #7c3aed;  /* Violeta vibrante */
+  --accent-blue: #3b82f6;    /* Azul brillante */
+  --text-dark: #1e293b;
+}
+
+.header {
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #eef2ff;
+
+  .title {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    /* Degradado de Violeta a Azul */
+    background: linear-gradient(90deg, var(--primary-violet), var(--accent-blue));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 20px; /* Separación entre los bloques de links */
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0 0;
+  }
+
+  .link {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px; /* Menos redondo, más tipo "tarjeta" */
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    &:hover {
+      border-color: var(--primary-violet);
+      color: var(--primary-violet);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+    }
+  }
+}

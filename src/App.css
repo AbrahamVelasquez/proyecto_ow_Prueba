@@ -1,0 +1,51 @@
+/* Estilos globales para limpiar la página */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f4f7fb; /* Un gris muy claro para que resalte el blanco */
+  color: #333;
+}
+
+.main-content {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto; /* Centra todo el contenido en la pantalla */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Espacio uniforme entre h2, input y botones */
+}
+
+h2 {
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+  user-select: none; /* Evita que se seleccione el texto al hacer muchos clics */
+}
+
+h2:hover {
+  color: #063fb9; /* El azul que usamos en el header */
+}
+
+/* Estilo para el Input */
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #063fb9;
+  box-shadow: 0 0 8px rgba(6, 63, 185, 0.2);
+}
+
+/* Ajuste para el botón si el componente ButtonComponent usa una clase */
+button {
+  cursor: pointer;
+}
